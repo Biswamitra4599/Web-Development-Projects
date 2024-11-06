@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Default background color */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    color: #333;
+    text-align: center;
+    overflow-y: auto; /* Allow scrolling */
+}
+
+.wrapper {
+    margin-top: 50px; /* Margin from top */
+    margin-bottom: 50px; /* Margin from bottom */
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(135deg, #6e7dd5, #ff7a59); /* Gradient background on the wrapper */
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the calculator */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.container:hover {
+    transform: scale(1.05); /* Slightly enlarge the calculator on hover */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    text-align: right;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-weight: bold;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    font-size: 22px;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #e0e7f1;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #d1d8e0;
+}
+
+/* Operator Buttons */
+.operator {
+    background-color: #ff7a59;
+    color: white;
+}
+
+.operator:hover {
+    background-color: #e55e3a;
+}
+
+/* Equals Button */
+.equals {
+    background-color: #6e7dd5;
+    color: white;
+}
+
+.equals:hover {
+    background-color: #4f5fb6;
+}
+
+/* Function Buttons (Scientific) */
+.func {
+    background-color: #4caf50;
+    color: white;
+}
+
+.func:hover {
+    background-color: #45a049;
+}
+
+/* Memory Buttons */
+.memory {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.memory:hover {
+    background-color: #e03e3e;
+}
+
+/* Clear Button */
+.clear {
+    background-color: #ff4c4c;
+    color: white;
+}
+
+.clear:hover {
+    background-color: #e03e3e;
+}
+
+/* Constants Buttons */
+button:active {
+    background-color: #d1d8e0;
+}
